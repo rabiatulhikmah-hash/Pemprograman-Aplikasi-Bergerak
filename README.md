@@ -68,22 +68,55 @@ lib/
 
 ## 📱 Implementasi & Tampilan Aplikasi
 
-1. 
-<img width="439" height="974" alt="Screenshot 2026-02-26 065350" src="https://github.com/user-attachments/assets/f30d8939-7261-4d3f-956a-d3e017be9371" />
+### 1. Halaman Utama (Home Page)
+<p align="center">
+<img width="439" height="974" alt="Screenshot 2026-02-26 065350" src="https://github.com/user-attachments/assets/f30d8939-7261-4d3f-956a-d3e017be9371" /> </p>
+Dua menu utama:
+* Buat Booking Baru → menuju form pemesanan tiket
+* Booking Saya → melihat daftar booking aktif
 
-2. 
-<img width="439" height="972" alt="Screenshot 2026-02-26 065428" src="https://github.com/user-attachments/assets/25e1d2c2-ddbb-44d5-b180-c2280e3c0678" />
+### 2. Halaman Booking Baru (Add Booking Page)
+<p align="center">
+<img width="439" height="972" alt="Screenshot 2026-02-26 065428" src="https://github.com/user-attachments/assets/25e1d2c2-ddbb-44d5-b180-c2280e3c0678" /> </p>    
+Halaman form untuk membuat booking baru. Pengguna:
 
-3. 
-<img width="439" height="364" alt="Screenshot 2026-02-26 065608" src="https://github.com/user-attachments/assets/c2fcfaa9-c3a9-4af7-b1ae-73b482cf8120" />
+* Memilih film, jadwal, dan kursi secara bertahap
+* Mengisi data pemesan (Nama, Nomor HP, Email)
+* Menekan Konfirmasi Booking untuk menyimpan data
 
-<img width="438" height="222" alt="Screenshot 2026-02-26 065645" src="https://github.com/user-attachments/assets/1c3ae62f-bdd2-4cc8-b71a-0af01d589393" />
+#### Dropdown Pilih Film :
+<p align="center">
+<img width="439" height="364" alt="Screenshot 2026-02-26 065608" src="https://github.com/user-attachments/assets/c2fcfaa9-c3a9-4af7-b1ae-73b482cf8120" /> </p>
+Menampilkan daftar film yang tersedia dalam sistem dan dapat dipilih langsung oleh pengguna.
 
+#### Dropdown Pilih Jadwal
+<p align="center">
+<img width="438" height="222" alt="Screenshot 2026-02-26 065645" src="https://github.com/user-attachments/assets/1c3ae62f-bdd2-4cc8-b71a-0af01d589393" /> </p>    
+Menampilkan jadwal sesuai film yang dipilih. Setelah jadwal dipilih, studio dan harga tiket muncul otomatis.
 
-<img width="418" height="398" alt="Screenshot 2026-02-26 065833" src="https://github.com/user-attachments/assets/cadec696-7616-4060-a92d-0ea3bbb4d0de" />
+#### Validasi Form Data Pemesan
+<p align="center">
+<img width="418" height="398" alt="Screenshot 2026-02-26 065833" src="https://github.com/user-attachments/assets/cadec696-7616-4060-a92d-0ea3bbb4d0de" /> </p>
+Sistem melakukan validasi saat submit:
 
-<img width="436" height="402" alt="Screenshot 2026-02-26 065928" src="https://github.com/user-attachments/assets/1049fe7f-7ad4-4fd2-8772-1c3fe5d57d58" />
+* Nama wajib diisi
+* Nomor HP hanya angka (10–13 digit)
+* Email harus berformat @gmail.com
 
-<img width="402" height="402" alt="image" src="https://github.com/user-attachments/assets/8b02004f-cc72-463c-bfb9-7521a4320499" />
+### 3. Halaman Booking Saya (My Booking Page)
+<p align="center">
+<img width="420" height="350" alt="Screenshot 2026-02-26 065928" src="https://github.com/user-attachments/assets/1049fe7f-7ad4-4fd2-8772-1c3fe5d57d58" /> </p>    
+Menampilkan seluruh booking yang telah dibuat dalam bentuk kartu.
 
-<img width="436" height="500" alt="image" src="https://github.com/user-attachments/assets/119ac05e-1f8c-4452-93fb-293cc4f13d06" />
+#### Dialog Konfirmasi Hapus
+<p align="center">
+<img width="402" height="402" alt="image" src="https://github.com/user-attachments/assets/8b02004f-cc72-463c-bfb9-7521a4320499" /> </p>
+Saat tombol Hapus ditekan, muncul dialog konfirmasi:
+
+- Batal → membatalkan penghapusan
+- Hapus → menghapus booking secara permanen
+
+### 4.  Halaman Edit Booking (Edit Booking Page)
+<p align="center">
+<img width="436" height="500" alt="image" src="https://github.com/user-attachments/assets/119ac05e-1f8c-4452-93fb-293cc4f13d06" /> </p>
+Menampilkan form dengan data yang sudah terisi. Pengguna dapat mengubah informasi booking lalu menekan Simpan Perubahan untuk memperbarui data.
