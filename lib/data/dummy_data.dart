@@ -1,4 +1,3 @@
-// Data film yang tersedia
 const List<String> daftarFilm = [
   'Avengers: Secret Wars',
   'Inception 2',
@@ -7,7 +6,6 @@ const List<String> daftarFilm = [
   'Spider-Man: Beyond',
 ];
 
-// Jadwal per film: Map<namaFilm, List<jadwal>>
 const Map<String, List<String>> jadwalPerFilm = {
   'Avengers: Secret Wars': [
     'Senin, 2 Jun 2025 - 10:00',
@@ -36,7 +34,6 @@ const Map<String, List<String>> jadwalPerFilm = {
   ],
 };
 
-// Studio per jadwal: Map<jadwal, studio>
 const Map<String, String> studioPerJadwal = {
   'Senin, 2 Jun 2025 - 10:00': 'Studio 1',
   'Senin, 2 Jun 2025 - 13:00': 'Studio 2',
@@ -55,7 +52,6 @@ const Map<String, String> studioPerJadwal = {
   'Sabtu, 7 Jun 2025 - 20:00': 'Studio 2',
 };
 
-// Kursi per studio
 const Map<String, List<String>> kursiPerStudio = {
   'Studio 1': ['A1', 'A2', 'A3', 'B1', 'B2', 'B3', 'C1', 'C2', 'C3'],
   'Studio 2': ['A1', 'A2', 'A3', 'B1', 'B2', 'B3', 'C1', 'C2', 'C3'],
@@ -63,11 +59,10 @@ const Map<String, List<String>> kursiPerStudio = {
   'Studio IMAX': ['I1', 'I2', 'I3', 'I4', 'I5', 'I6', 'I7', 'I8'],
 };
 
-// Harga berdasarkan tipe studio
 int getHarga(String studio) {
   if (studio == 'Studio VIP') return 75000;
   if (studio == 'Studio IMAX') return 95000;
-  return 45000; // Studio 1 & 2
+  return 45000;
 }
 
 String formatHarga(int harga) {
