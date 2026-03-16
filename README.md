@@ -7,7 +7,6 @@ CineBook adalah aplikasi mobile booking tiket bioskop yang dibuat menggunakan Fl
 
 Data booking tidak lagi disimpan secara lokal, tetapi langsung tersimpan di database Supabase sehingga dapat diakses secara real-time. Pengguna harus login terlebih dahulu sebelum menggunakan aplikasi, dan setiap pengguna hanya dapat melihat serta mengelola data booking miliknya sendiri melalui penerapan Row Level Security (RLS). Proses pemesanan tiket dilakukan dengan memilih film, jadwal tayang, dan kursi yang tersedia, dengan harga tiket yang muncul otomatis sesuai tipe studio yang dipilih.
 
----
 
 ## 2. Fitur Aplikasi
 
@@ -38,7 +37,6 @@ Data booking tidak lagi disimpan secara lokal, tetapi langsung tersimpan di data
 | **Alert Dialog Konfirmasi** | Konfirmasi sebelum menghapus data booking |
 | **Refresh Data** | Tombol refresh dan pull-to-refresh untuk memuat ulang data dari Supabase |
 
----
 
 ## 3. Widget yang Digunakan
 
@@ -68,7 +66,6 @@ Data booking tidak lagi disimpan secara lokal, tetapi langsung tersimpan di data
 | `Consumer` | Mendengarkan perubahan ThemeProvider dari package Provider |
 | `ChangeNotifierProvider` | Menyediakan state ThemeProvider ke seluruh widget tree |
 
----
 
 ## 4. Halaman Aplikasi
 
@@ -81,7 +78,6 @@ Data booking tidak lagi disimpan secara lokal, tetapi langsung tersimpan di data
 | `my_booking_page.dart` | Daftar booking dari Supabase, fitur Read, Delete, dan navigasi Edit |
 | `edit_booking_page.dart` | Form edit booking, perubahan di-update ke Supabase |
 
----
 
 ## 5. Struktur Database Supabase
 
@@ -101,7 +97,7 @@ Data booking tidak lagi disimpan secara lokal, tetapi langsung tersimpan di data
 | `user_id` | uuid | Foreign key ke `auth.users` |
 | `created_at` | timestamp | Waktu booking dibuat |
 
----
+
 
 ## 6. Sistem Harga Tiket
 
@@ -111,12 +107,12 @@ Data booking tidak lagi disimpan secara lokal, tetapi langsung tersimpan di data
 | Studio VIP | Rp 75.000 |
 | Studio IMAX | Rp 95.000 |
 
----
+
 
 ## 7. Struktur Folder
 
 
-
+![Struktur File](assets/strukturfile.png)
 
 
 
@@ -145,3 +141,32 @@ create policy "Users can insert own bookings" on bookings for insert with check 
 create policy "Users can update own bookings" on bookings for update using (auth.uid() = user_id);
 create policy "Users can delete own bookings" on bookings for delete using (auth.uid() = user_id);
 ```
+
+------
+# Tampilan Aplikasi 📱
+
+### Login & Register
+
+![Register](assets/regis.png)
+
+![Login](assets/login.png)
+
+### Home
+![Home Dark](assets/homedark.png)
+![Home Light](assets/homelight.png)
+
+### Booking
+![booking](assets/booking.png)
+
+![Pilih Film](assets/pilihfilm.png)
+
+![Pilih Kursi](assets/kursi.png)
+
+![Booking Saya](assets/bookingsaya.png)
+
+### Edit
+![Edit](assets/edit.png)
+
+### Hapus
+![Notif Hapus](assets/notifhapus.png)
+
